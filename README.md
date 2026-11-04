@@ -1,31 +1,23 @@
 # Network Security Labs
 
-Hands-on labs from my Network Security course (CYS 502) at IAU. These labs cover network attacks, defenses, and secure configuration. Each lab gets its own folder with a write-up, configuration, and screenshots. Write-ups are being added.
+Labs from my Network Security course (CYS 502) at Imam Abdulrahman Bin Faisal University. They cover traffic filtering, device hardening, authentication, VPNs, cryptography, and DNS security.
 
 > **Note:** All labs were done in simulated or isolated environments for educational purposes only.
 
 ## Labs
-| # | Lab | Topics | Tools |
+| # | Lab | Focus | Tools |
 |---|---|---|---|
-| 01 | DNS Attacks | DNS spoofing, cache poisoning | Packet Tracer |
-| 02 | DNSSEC | Securing DNS with signatures | Packet Tracer |
-| 03 | IP Access Control Lists | Standard and extended ACLs, traffic filtering | Packet Tracer |
+| 01 | [Extended and IPv6 ACLs](./01-extended-and-ipv6-acls) | Traffic filtering and ACL placement | Packet Tracer |
+| 03 | [Router Hardening and AAA](./03-router-hardening-and-aaa) | OSPF MD5, NTP, Syslog, SSH, TACACS+, RADIUS | Packet Tracer |
+| 05 | [IPsec VPN](./05-ipsec-vpn) | Site-to-site and remote-access VPNs | Packet Tracer, Sophos XG, Wireshark |
+| | [OpenSSL and GPG](./openssl-and-gpg) | RSA keys and the web of trust | OpenSSL, GnuPG |
+| | [DNSSEC Validation](./dnssec-validation) | DNSSEC records and chain of trust | PowerShell, DNSViz |
 
-## Structure
-```
-network-security-labs/
-├── 01-dns-attacks/
-│   ├── README.md        # write-up
-│   ├── screenshots/
-│   └── topology.pkt
-├── 02-dnssec/
-└── 03-ip-acls/
-```
+Labs 01, 03, and 05 were completed as team labs with classmates.
 
-## Key Skills Demonstrated
-- Analyzing and simulating network attacks
-- Configuring network defenses (DNSSEC, ACLs)
-- Documenting findings and mitigations clearly
-
-## Credits
-Some labs were completed as group work with classmates.
+## Skills Demonstrated
+- Designing and placing ACLs to enforce least-privilege network access
+- Hardening Cisco routers: authenticated routing, trusted time, centralized logging, SSH-only management
+- Configuring AAA with local, TACACS+, and RADIUS authentication
+- Building and verifying IPsec VPNs end to end
+- Working with public-key cryptography and DNSSEC
